@@ -1,0 +1,144 @@
+Web Monitor - 1.0.0.1 - 09.11.2008
+=====================
+- Added local proxy settings for each monitor
+
+Web Monitor - 0.0.6.0 - 27.01.2008
+=====================
+- Added progressbar
+- Added alot of new famfamfam icons
+- Redesigned some of the code
+- Made a thread-safe way of writing to the log. (Invoke)
+- Monitor history size is now working. You can now choose how many "requests" you want the graph to show.
+- Auto save of log file added. This isn't implemented correctly, but it works. Choose a file path for the log file, and start the monitoring. The log file is only saved every time the application "ticks" it self.
+- Project added to Codeplex.com
+
+Web Monitor - 0.0.4.5 - 16.05.2007
+=====================
+- 0000123: [Suggestion] Move edit tab to be the first tab in the Monitor Edit window (Qbus)
+- 0000124: [Suggestion] Put log, overview, graph on different tab or something simular (Qbus)
+
+Web Monitor - 0.0.4.0 - 14.05.2007
+=====================
+- 0000113: [Suggestion] Format the time columns so its easier to have a overlook (Qbus)
+- 0000117: [Suggestion] Oversigt over success/failed requests (Qbus)
+- 0000118: [Suggestion] MessageBox will pop up and tell you that data is send, when you send a submittion.
+This way you have a change to cancel it, if you need to make changes.(Qbus)
+
+- The ZedGraph component has been added to the program, so you now have a nice graph of your monitors in the main form.
+- To make this ZedGraph work, I have implemented a history for each Monitor. This history isn't saved when you leave the program.
+- Some settings for the two above new features has been implemented to setup in the Settings.
+- A Monitor has now got a new property, as Color. This color is the one used when drawing the graph. 
+
+Web Monitor - 0.0.3.40 - 02.05.2007
+======================
+- PlayWarning sound has now been added. In 'Settings' you can now set the application to play a sound(PC-speaker)
+when a monitor is failing.
+- Exit dialog has been added. When you exit the application, you will be promted if you are sure.
+
+Web Monitor - 0.0.3.35 - 05.03.2007
+======================
+- 'Response time' and 'Average pingtime' has both been formated like 1024,22.
+
+Web Monitor - 0.0.3.30 - 28.02.2007
+======================
+- 0000087: [Suggestion] Monitor Settings: Connection cridentials (possiblity to login) (Qbus)
+
+Web Monitor - 0.0.3.20 - 27.02.2007
+======================
+- Preview Tab added to the Monitor Details window. Here you can preview the URL the monitor is checking.
+
+
+Web Monitor - 0.0.3.20 - 27.02.2007
+======================
+- 0000062: [Bug] Ja den giver altså fejl hvis man ikke skriver http:// først i adressen (Qbus)
+- 0000107: [Suggestion] Gennemsnitlig Responstid (Qbus)
+- 0000109: [Suggestion] Force GC after each timerTick (Qbus)
+- 0000110: [Comment] Avoid URI exceptions (Qbus)
+- 'AveragePingTime' has been added to the Monitor.
+- Some changes have been made to what properties is exported in the Monitor List.
+
+
+Web Monitor - 0.0.3.5 - 23.02.2007
+======================
+- Test of garbage collection after each TimerTick
+
+Web Monitor - 0.0.3.00 - 23.02.2007
+======================
+- 0000037: [Request] Make it possible to see if the monitoring site's HTML contains some text (Qbus)
+- 0000093: [Suggestion] The ability to export your monitor list to a XML file (Qbus)
+- 0000097: [Suggestion] Add a [BETA] tag to the mainform title, so people can see that this is not a final product yet. (Qbus)
+
+- New Rule: HTML contains text. You can now specify somewords that MUST/CANNOT be in the HTML.
+- It's now possible to import and export your monitor list. NOTE: I can't promise that it will work in newer versions.
+
+
+
+Web Monitor - 0.0.2.50 - 22.02.2007
+======================
+- Laumania Logo has been added to the About window.
+- Much more detailed bug reporting if the application crashes.
+- It's now possible to double click on a monitor and edit it, and see some details. (remember every detail is updated on EVERY request)
+- It's now possible to collect all HTML from every request. (WARNING: this will make your response times a little larger)
+
+Web Monitor - 0.0.2.35 - 21.02.2007
+======================
+- 0000077: [Bug] Fejl i export af Log (Qbus)
+- 0000078: [Bug] Submit doesn't work. Object ref = null (Qbus)
+- 0000079: [Bug] AboutBox isn't updato date with version number. Fix so it uses the ClickOnce version number. (Qbus)
+- 0000080: [Bug] Error Text isn't updated when a server is again working properly (Qbus)
+- 0000088: [Suggestion] Show the rule value and the current value of a monitor in the balloonTip (Qbus)
+- 0000089: [Bug] Show all "sub-forms" as a ShowDialog, so you dont forgot or mis a opened window (Qbus)
+- 0000094: [Suggestion] Add a "Add Monitor" function tot he tray right click menu, so you can add monitors fast (Qbus)
+
+- Exception Reporter added when the application crashes. Currently it's the same form as the Submit form. This will be changed, and it will have it's own.
+- Correct version of the application is now shown at the About form.
+- All windows all have the mainform as there parrent, which means that they will always be centeren on it.
+- The change log will be shown the first time you start up the application after each update.
+- New Add/Remove icons added.
+
+
+Web Monitor - 0.0.2.27 - 19.02.2007
+======================
+- Quick fix for another icon.
+
+Web Monitor - 0.0.2.26 - 19.02.2007
+======================
+- Quick fix for the Start monitoring icon.
+
+Web Monitor - 0.0.2.25 - 19.02.2007
+======================
+- 0000046: [Suggestion] The possiblity to save the log, or even have it auto saved at a given interval (Qbus)
+- 0000066: [Bug] If a Monitor has been down, it seems that when it comes up again it doesnt change the Status Icon (Qbus)
+- 0000068: [Bug] Ændring af indstillinger af autoping træder først i kraft efter programmet er blevet genstartet :) FIX NU ! /TV2 Guy (Qbus)
+- 0000069: [Suggestion] Show which monitor has errors, when you get a RuleFailed error. (Qbus)
+- 0000070: [Bug] The autoPing interval is sometimes set to 0. (Qbus)
+- 0000071: [Suggestion] Two small things: Add shortcut key on "Add Monitor" Tab order in "Add Monitor"-dialog window -) (Qbus)
+- 0000072: [Bug] Right-Click menu on the tray doesnt update. It always show "Stop Monitoring". (Qbus)
+- 0000074: [Suggestion] The Status collum should be changed to the ErrorText property. You can see the Status on the StatusIcon anyway. (Qbus)
+- 0000075: [Suggestion] Url in balloon tip (Qbus)
+- 0000076: [Bug] If the text in the Sumary field is too long, the bug reporting will fail. Make it a fixed size, so you can't type in too much (Qbus)
+
+- New application iocn added.
+- New serverUp/serverDown icons added.
+- The 'Help the developer' messagebox in the startup of the program, is only shown the first time you start the program.
+- The autoPing interval shown at the "MainForm" is now updated correctly, so it match the actual value.
+- 'Add Monitor' and 'Save' has been added to the 'File' menu. The 'Save' will save all of your currect settings, including all your monitors.
+
+
+
+Web Monitor - 0.0.2.22 - 18.02.2007
+======================
+- The Status's has been changed to Up, Down and RuleFailed.
+- You can now determine what's the max response time your monitor can have before it will warn you. (You have to re-create all your monitors to make it work, old ones will not work)
+- The Auto Ping interval, is no longer in ms, it's now in minutes. 
+
+Web Monitor - 0.0.2.20 - 18.02.2007
+======================
+- 0000038: [Bug] Can't save MonitorManager in Settings (Qbus)
+- 0000039: [Bug] Program freezing after short time (Qbus)
+- 0000056: [Bug] Spelling error (Qbus)
+- 0000060: [Bug] LastUpdated isnt updated in the overview (Qbus)
+- 0000061: [Bug] LastUpdated doesnt get updated (Qbus)
+
+- The text that goes into the log has changed. More info added.
+- Changelog window has been added.

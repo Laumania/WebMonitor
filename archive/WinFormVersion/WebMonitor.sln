@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMonitor", "WebMonitor\WebMonitor.csproj", "{82F64DFA-0356-4D2A-BD33-DE70EC2C41AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMonitor.Plugin.Basic", "WebMonitor.Plugin.Basic\WebMonitor.Plugin.Basic.csproj", "{032BB61B-DB99-4262-B38B-8E03CC5C97A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMonitor.Engine", "WebMonitor.Engine\WebMonitor.Engine.csproj", "{E82FB91E-9C03-43D4-92E0-A70657C7C024}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs06.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebMonitor\\WebMonitor.csproj
+		SccProjectName1 = WebMonitor
+		SccLocalPath1 = WebMonitor
+		SccProjectUniqueName2 = WebMonitor.Plugin.Basic\\WebMonitor.Plugin.Basic.csproj
+		SccProjectName2 = WebMonitor.Plugin.Basic
+		SccLocalPath2 = WebMonitor.Plugin.Basic
+		SccProjectUniqueName3 = WebMonitor.Engine\\WebMonitor.Engine.csproj
+		SccProjectName3 = WebMonitor.Engine
+		SccLocalPath3 = WebMonitor.Engine
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82F64DFA-0356-4D2A-BD33-DE70EC2C41AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F64DFA-0356-4D2A-BD33-DE70EC2C41AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F64DFA-0356-4D2A-BD33-DE70EC2C41AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F64DFA-0356-4D2A-BD33-DE70EC2C41AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{032BB61B-DB99-4262-B38B-8E03CC5C97A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032BB61B-DB99-4262-B38B-8E03CC5C97A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032BB61B-DB99-4262-B38B-8E03CC5C97A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032BB61B-DB99-4262-B38B-8E03CC5C97A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E82FB91E-9C03-43D4-92E0-A70657C7C024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82FB91E-9C03-43D4-92E0-A70657C7C024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82FB91E-9C03-43D4-92E0-A70657C7C024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82FB91E-9C03-43D4-92E0-A70657C7C024}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

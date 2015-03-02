@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="WebMonitor.MainWindow"
+        xmlns:ui="clr-namespace:WebMonitor.UI"
+        Title="WebMonitor - Future!" Height="520" Width="953" WindowStartupLocation="CenterScreen" mc:Ignorable="d">
+	<Window.Background>
+		<LinearGradientBrush EndPoint="0.98,0.975" StartPoint="0.021,0.029">
+			<GradientStop Color="#FFD2D2D4"/>
+			<GradientStop Color="#FFE9E9E9" Offset="0.496"/>
+			<GradientStop Color="#FECBCBCE" Offset="1"/>
+		</LinearGradientBrush>
+	</Window.Background>
+    <Grid>
+        <ListBox x:Name="MonitorsListBox" Margin="0,0,336,170" SelectionChanged="MonitorsListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <ui:MonitorListItemUI DataContext="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Height="39" HorizontalAlignment="Left" Margin="0,260,0,0" x:Name="stackPanel1" VerticalAlignment="Top" Width="595" Orientation="Horizontal">
+            <Button Content="Load Monitors" Height="23" x:Name="LoadButton" Width="97" Click="LoadButton_Click" Margin="5" />
+            <Button Content="Save Monitors" Height="23" x:Name="SaveButton" Width="92" Click="SaveButton_Click" Margin="5" />
+            <ComboBox Height="23" x:Name="PluginsComboBox" Width="200" Margin="5" ItemsSource="{Binding}" />
+            <Button Content="Force Ping (all)" x:Name="PingButton" Width="95" Height="23" Click="PingButton_Click" Margin="5" />
+        </StackPanel>
+        <StackPanel Height="34" HorizontalAlignment="Left" Margin="0,220,0,0" x:Name="stackPanel2" VerticalAlignment="Top" Width="595" Orientation="Horizontal">
+            <Button Content="Switch service" Height="23" x:Name="switchServiceButton" Width="97" Click="switchServiceButton_Click" Margin="5" />
+            <TextBlock Height="23" x:Name="textBlock2" Text="Service status" Width="79" FlowDirection="LeftToRight" TextTrimming="None" TextWrapping="NoWrap" Margin="5" />
+            <TextBox Height="23" x:Name="serviceStatus" Width="99" IsEnabled="False" Margin="5" />
+        </StackPanel>
+        <ListBox Height="373" HorizontalAlignment="Left" Margin="601,0,0,0" x:Name="monitorPluginListBox" VerticalAlignment="Top" Width="318" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <ContentControl  Content="{Binding View}" VerticalAlignment="Stretch" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
